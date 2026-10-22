@@ -1,5 +1,5 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/buger/jsonparser)](https://goreportcard.com/report/github.com/buger/jsonparser) ![License](https://img.shields.io/dub/l/vibe-d.svg)
-# Alternative JSON parser for Go (so far fastest)
+# Alternative JSON parser for Go (10x times faster standard library)
 
 It does not require you to know the structure of the payload (eg. create structs), and allows accessing fields by providing the path to them. It is up to **10 times faster** than standard `encoding/json` package (depending on payload size and usage), **allocates no memory**. See benchmarks below.
 
@@ -89,10 +89,6 @@ jsonparser.EachKey(data, func(idx int, value []byte, vt jsonparser.ValueType, er
 
 // For more information see docs below
 ```
-
-## Need to speedup your app?
-
-I'm available for consulting and can help you push your app performance to the limits. Ping me at: leonsbox@gmail.com.
 
 ## Reference
 
